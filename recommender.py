@@ -1,7 +1,7 @@
 import os
 from openai import OpenAI
 
-client = OpenAI(api_key="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")
+client = OpenAI(api_key="")
 
 # hard-coded data for testing
 user_interests = ["engineering", "technology", "NCAA basketball", "networking", "environmental sustainability", "entrepreneurship"]
