@@ -5,7 +5,7 @@ from openai import OpenAI
 input_token_rate = 0.50  # $0.50 per 1 million tokens
 output_token_rate = 1.50  # $1.50 per 1 million tokens
 
-client = OpenAI(api_key=)
+client = OpenAI(api_key='YT0T2PnhzUTnNqvJwImdT3BlbkFJky7ey8hUIBDUjzU9P1sF')
 
 prompt = "Tell me how to make an AI event classifier, answer in 40 words maximum."
 

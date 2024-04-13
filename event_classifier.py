@@ -3,11 +3,16 @@ import nltk
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
+from openai import OpenAI
 from collections import Counter
 
 nltk.download('punkt')
 nltk.download('stopwords')
 nltk.download('wordnet')
+
+client = OpenAI(api_key='')
+
+prompt = "Only generate 5 unique one-word labels with no other context like numbers or new line just separated by commas in pascalcase, based on following title & description: "
 
 def custom_tokenize(text):
     tokens = word_tokenize(text.lower())
@@ -19,13 +24,22 @@ def custom_tokenize(text):
 
 def generate_tags(events):
     tags_dict = {}
+    count = 0
     for event in events:
-        title_tokens = custom_tokenize(event['title'])
-        description_tokens = custom_tokenize(event['description'])
-        all_tokens = title_tokens + description_tokens
-        tag_count = Counter(all_tokens)
-        sorted_tags = sorted(tag_count.items(), key=lambda x: x[1], reverse=True)
-        tags_dict[event['title']] = [tag[0] for tag in sorted_tags[:3]]  # Extract top 3 tags
+        chat_completion = client.chat.completions.create(
+            messages=[
+                {
+                    "role": "user",
+                    "content": prompt + event['title'] + event['description'],
+                }
+            ],
+            model="gpt-3.5-turbo",
+        ) 
+
+        tags_dict[event['title']] = chat_completion.choices[0].message.content 
+        count += 1
+        if(count == 7):
+            return tags_dict
     return tags_dict
 
 # Load events from JSON file
