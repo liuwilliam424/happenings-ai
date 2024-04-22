@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "fs": "^0.0.1-security",
     "openai": "^4.38.3",
     "punycode": "^2.3.1"
   }
