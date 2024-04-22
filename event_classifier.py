@@ -10,11 +10,12 @@ nltk.download('punkt')
 nltk.download('stopwords')
 nltk.download('wordnet')
 
-client = OpenAI(api_key='sk-')
+client = OpenAI(api_key='')
 input_token_rate = 0.50  # $0.50 per 1 million tokens
 output_token_rate = 1.50  # $1.50 per 1 million tokens
 
 prompt = "Only generate 5 unique one-word labels with no other context like numbers or new line just separated by commas in pascalcase, based on following title & description: "
+num_events = 10
 
 def custom_tokenize(text):
     tokens = word_tokenize(text.lower())
@@ -43,7 +44,7 @@ def generate_tags(events):
         count += 1
         output_token_count = len(chat_completion.choices[0].message.content)
         
-        if(count == 100):
+        if(count == num_events):
             total_cost = (input_token_count * input_token_rate + output_token_count * output_token_rate) / 10**6
             print("Completed Message:", chat_completion)
             print("Cost of Prompt: $", total_cost)
@@ -61,4 +62,4 @@ tags_dict = generate_tags(events)
 with open('tags.json', 'w', encoding='utf-8') as f:
     json.dump(tags_dict, f, indent=4)
 
-print("Tags saved to 'tags.json'")
+print(str(num_events) + " tags saved to 'tags.json'")
