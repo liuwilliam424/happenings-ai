@@ -1,0 +1,108 @@
+{
+    "UhQU8MaBwJhwNvFNkHCGR7IKpDO2": {
+      "name": "u",
+      "email": "h@illinois.edu",
+      "events": [
+        "Event1",
+        "Event2"
+      ],
+      "likes": [
+        "basketball",
+        "reading"
+      ],
+      "dislikes": [
+        "running",
+        "spicy food"
+      ],
+      "like": 2,
+      "dislike": 2,
+      "reportedBy": [],
+      "reports": 0,
+      "saveLogin": false
+    },
+    "GRWzgf12LoexZQWL7S85": {
+      "name": "a",
+      "email": "a@example.com",
+      "events": [
+        "Event3",
+        "Event4"
+      ],
+      "likes": [
+        "swimming",
+        "video games"
+      ],
+      "dislikes": [
+        "homework",
+        "public speaking"
+      ],
+      "like": 2,
+      "dislike": 2,
+      "reportedBy": [],
+      "reports": 0,
+      "saveLogin": true
+    },
+    "TkiHaNK43XWrPRrYRXPE": {
+      "name": "b",
+      "email": "b@example.com",
+      "events": [
+        "Event5",
+        "Event6"
+      ],
+      "likes": [
+        "cycling",
+        "cooking"
+      ],
+      "dislikes": [
+        "cold weather",
+        "traffic"
+      ],
+      "like": 2,
+      "dislike": 2,
+      "reportedBy": [],
+      "reports": 0,
+      "saveLogin": false
+    },
+    "XOHJpGLuHg4yccRYd3sT": {
+      "name": "c",
+      "email": "c@example.com",
+      "events": [
+        "Event7",
+        "Event8"
+      ],
+      "likes": [
+        "hiking",
+        "photography"
+      ],
+      "dislikes": [
+        "crowded places",
+        "loud music"
+      ],
+      "like": 2,
+      "dislike": 2,
+      "reportedBy": [],
+      "reports": 0,
+      "saveLogin": true
+    },
+    "XzP0T7RiOTeyyADONuzg": {
+      "name": "d",
+      "email": "d@example.com",
+      "events": [
+        "Event9",
+        "Event10"
+      ],
+      "likes": [
+        "painting",
+        "traveling"
+      ],
+      "dislikes": [
+        "early mornings",
+        "waiting in lines"
+      ],
+      "like": 2,
+      "dislike": 2,
+      "reportedBy": [],
+      "reports": 0,
+      "saveLogin": false
+    }
+  }
+  

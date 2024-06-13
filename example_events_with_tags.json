@@ -1,0 +1,62 @@
+{
+    "HioZu141Dwx5sifE54Vh": {
+      "date": "April 22, 2024",
+      "description": "Science Fair but it has basketball",
+      "expiration": "April 23, 2024 at 5:00:00 PM UTC-4",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/school-events.appspot.com/o/science-fair.png",
+      "location": "Main Auditorium",
+      "rsvpCount": 150,
+      "selectedLocation": {
+        "latitude": 40.712776,
+        "longitude": -74.005974
+      },
+      "time": "10:00 AM",
+      "title": "Annual Science Fair",
+      "tags": ["scienceFair", "education", "students", "exhibition"]
+    },
+    "HraFNLT9KPAab2h7yVP8N": {
+      "date": "May 10, 2024",
+      "description": "Spring Concert",
+      "expiration": "May 10, 2024 at 9:00:00 PM UTC-4",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/school-events.appspot.com/o/spring-concert.png",
+      "location": "School Gym",
+      "rsvpCount": 200,
+      "selectedLocation": {
+        "latitude": 34.052235,
+        "longitude": -118.243683
+      },
+      "time": "6:00 PM",
+      "title": "Spring Concert",
+      "tags": ["springConcert", "music", "concert", "performance"]
+    },
+    "k4QEjVBc0BuQ1oBpYEVh": {
+      "date": "June 1, 2024",
+      "description": "Graduation Ceremony",
+      "expiration": "June 1, 2024 at 5:00:00 PM UTC-4",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/school-events.appspot.com/o/graduation-ceremony.png",
+      "location": "Football Field",
+      "rsvpCount": 500,
+      "selectedLocation": {
+        "latitude": 41.878113,
+        "longitude": -87.629799
+      },
+      "time": "3:00 PM",
+      "title": "Graduation Ceremony",
+      "tags": ["graduationCeremony", "graduation", "students", "celebration"]
+    },
+    "z02TFvZ12d7xNLaYIqqM": {
+      "date": "August 15, 2024",
+      "description": "Back to School Night",
+      "expiration": "August 15, 2024 at 8:00:00 PM UTC-4",
+      "imageUrl": "https://firebasestorage.googleapis.com/v0/b/school-events.appspot.com/o/back-to-school-night.png",
+      "location": "School Cafeteria",
+      "rsvpCount": 100,
+      "selectedLocation": {
+        "latitude": 29.760427,
+        "longitude": -95.369804
+      },
+      "time": "5:00 PM",
+      "title": "Back to School Night",
+      "tags": ["backToSchoolNight", "school", "parents", "students"]
+    }
+}
