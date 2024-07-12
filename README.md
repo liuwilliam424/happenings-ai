@@ -1,5 +1,6 @@
 # Happenings-AI
 
+This is the AI Backend Repository of the Happenings app, built for Project: Code (2024)
 
 ### Event Classifier
 
